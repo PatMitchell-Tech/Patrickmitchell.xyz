@@ -3,3 +3,8 @@
     width: 150px; /* adjust width as needed */
     height: auto; /* maintains aspect ratio */
 }
+
+
+body {
+    background-color: #f2f2f2; /* light gray */
+}
