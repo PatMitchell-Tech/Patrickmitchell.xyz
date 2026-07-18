@@ -145,7 +145,14 @@
       line-height: 1.65;
     }
 
-    /* ── Cert badge ── */
+    /* ── Cert badges ── */
+    .cert-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
     .cert-badge {
       display: inline-flex;
       align-items: center;
@@ -154,7 +161,6 @@
       border: 1px solid #e0c97a;
       border-radius: 8px;
       padding: 7px 12px;
-      margin-top: 1rem;
       font-size: 12.5px;
       color: #7a5c00;
       font-weight: 600;
@@ -166,9 +172,10 @@
       background: #fff4cc;
     }
 
-    .cert-badge .fa {
-      font-size: 15px;
-      color: #b8860b;
+    .cert-badge .cert-icon {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
     }
 
     /* ── Skills tags ── */
@@ -319,17 +326,20 @@
              I started my IT career as a Student Worker, learning the fundamentals of troubleshooting and user support. After progressing through Help Desk into systems administration, I now focus on server administration, networking, PowerShell scripting, and automation as an IT Systems Administrator at Innovance Inc. I'm passionate about building reliable infrastructure, improving processes through automation, and continuously expanding my technical skills.
           </p>
 
-          <a class="cert-badge"
-             target="_blank"
-             href="https://www.credly.com/badges/ad2da6f1-6062-4ecf-a5fd-d87786383147">
-            <img src="asset/img/Network.png" alt="CompTIA Network+" class="cert-icon">
-            CompTIA Network+
-        <a class="cert-badge"
-             target="_blank"
-             href="https://www.credly.com/badges/df707db3-bf6c-44e1-8666-ccf97211ba13/linked_in_profile">
-            <img src="asset/img/Security.png" alt="CompTIA Network+" class="cert-icon">
-            CompTIA Security+
-          </a>
+          <div class="cert-badges">
+            <a class="cert-badge"
+               target="_blank"
+               href="https://www.credly.com/badges/ad2da6f1-6062-4ecf-a5fd-d87786383147">
+              <img src="asset/img/Network.png" alt="CompTIA Network+" class="cert-icon">
+              CompTIA Network+
+            </a>
+            <a class="cert-badge"
+               target="_blank"
+               href="https://www.credly.com/badges/df707db3-bf6c-44e1-8666-ccf97211ba13/linked_in_profile">
+              <img src="asset/img/Security.png" alt="CompTIA Security+" class="cert-icon">
+              CompTIA Security+
+            </a>
+          </div>
         </div>
 
   
@@ -384,5 +394,3 @@
 
 </body>
 </html>
-
-
